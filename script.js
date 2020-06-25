@@ -1,4 +1,7 @@
-var mymap = L.map('mapid').setView([29.9395084, -90.2703625], 11)
+var mymap = L.map('mapid', { scrollWheelZoom: false }).setView(
+  [29.9395084, -90.2703625],
+  11
+)
 
 L.tileLayer(
   'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}',
